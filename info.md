@@ -95,11 +95,3 @@ what they do on the [commands]({{- "/commands" | relative_url -}}) page.
 
 {%- if puppeteer -%}
 <br/>
-## What is Puppeteer?
-
-[Puppeteer](https://steamcommunity.com/sharedfiles/filedetails/?id=2057192142) is a mod by Brrainz that
-allows viewers to directly control their pawns, and even view a number of information about your pawn in
-a graphical way. It also redirects some of the responses from Twitch Toolkit to its website to clean up
-chat a bit. So, if you're logged into Puppeeter and you're wondering why the bot isn't responding to you,
-you should check the `TT` tab on the website first.
-{%- endif -%}
