@@ -2,8 +2,19 @@
 layout: page
 title: Commands
 permalink: /commands
-store: true
 ---
+
+<script src="{{- 'assets/js/filter.js' | relative_url -}}"></script>
+<link rel="stylesheet" href="{{- 'assets/css/core.css' | relative_url -}} "/>
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+
+<h1>Quick Start </h1>
+<p><b>!buy pawn</b> to add a pawn to the colony start playing <br>
+ <b>!joinqueue</b> to wait for a free pawn.<br>
+ <b>!bal</b> will show your current balance</p><br>
+<p><b>Syntax for specific purchases:</b><br> !buy item[material,quality] amount </p><br>
+<p> <b>Example:</b> <br> !buy armchair[megaslothwool,excellent] 1 </p>
+
 
 {%- assign showCommands = site.data.commands.size -%}
 
@@ -30,7 +41,7 @@ store: true
             <thead>
                 <tr>
                     <th style="width: 35%">{{- site.data.language.command_name_header -}}</th>
-
+                    
                     {%- if site.commands.userlevel -%}
                         <th style="width: 18%">{{- site.data.language.user_level_header -}}</th>
                     {%- endif -%}
@@ -67,7 +78,7 @@ store: true
                         {%- if site.commands.userlevel -%}
                             <td>{{- command.userLevel -}}</td>
                         {%- endif -%}
-
+                        
                         <td>
                             {{- command.description -}}
 
